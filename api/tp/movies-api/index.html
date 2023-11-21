@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="col-md-12 fixed-top header">
+      <h1><span class="glyphicon glyphicon-film" aria-hidden="true"></span>  Movie Search</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="searchDivContainer col-md-4">
+          <!-- SEARCH CONTROLLER -->
+          <div class="searchDiv col-md-12">
+            <div class="inputArea">
+              <input type="text"  placeholder=" Movie Title" id="searchMovie">
+              <button type="button" id="searchButton"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Rechercher</button>
+            </div>
+            <div class="searchResult" >
+              <p> </p>
+              <div class="movieImageDiv">
+                <img class="movieImage">
+              </div>
+              <div class="movieInfo">
+                <h2>Titre</h2>
+                <p>Data plot</p>
+                <p><b>Genre: </b>genre</p>
+                <p><b>Director: </b>Director</p>
+                <p><b>Actors: </b>Acteurs</p>
+                <button type="button" >Add to favorites</button>
+              </div>
+            </div>
+            <div class="searchResult" >
+              <p><b>Erreur</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="favoritesDivContainer col-md-8">
+          <!-- FAVORITES CONTROLLER -->
+          <div class="favoritesDiv col-md-12">
+            <div>
+              <div class="movieInfoInFavorites" >
+                <div class="imgInFavoritesDiv col-md-2">
+                  <img class="imgInFavorites">
+                </div>
+                <div class="infoInFavoritesDiv col-md-10">
+                  <h2>{{movie.Title + ' (' + movie.Year + ')'}}</h2>
+                  <p>{{movie.Plot}}</p>
+                  <p><b>Genre: </b>{{movie.Genre}}</p>
+                  <p><b>Director: </b>{{movie.Director}}</p>
+                  <p><b>Actors: </b>{{movie.Actors}}</p>
+                  <button type="button" >Remove from favorites</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
