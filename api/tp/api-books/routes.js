@@ -20,7 +20,7 @@ router.put('/book/:id', (req, res) => {
     res.send(book);
 });
 
-// GET AN ARTICLE
+// GET A BOOK
 router.get('/book/:id', (req, res) => {
     const id = req.params.id;
     res.send(BOOKS.filter((book) => book.id !=1));
