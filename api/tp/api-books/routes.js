@@ -23,7 +23,7 @@ router.put('/book/:id', (req, res) => {
 // GET A BOOK
 router.get('/book/:id', (req, res) => {
     const id = req.params.id;
-    res.send(BOOKS.filter((book) => book.id !=1));
+    res.send(id);
     
 });
 
