@@ -21,6 +21,33 @@ IL faudra donc utiliser une api.IL existe deux grandes api publiques connues pou
 
  ![alt text for screen readers](/images/tp-news.png)
 
- ## 3 - Application de gestion des films
+ ## 3 - Concevoir une API REST de Gestion des livres en Node js
+  En tant que dévéloppeur, il vous ai demandé de concevoir une API REST pour la gestion des Livres.
 
- ![alt text for screen readers](/images/movie.png)
+  Votre API doit être capable :
+
+  - Enregistrer un livre
+  - Créer un livre 
+  - Modifier un livre
+  - Supprimer un livre
+
+### Installation de Node-js
+
+
+### Création du projet
+Créer un  repertoire de projet api-books à l'intérieur tapez la commande, bien sûr au moyen du terminal
+ - npm init
+
+### Installation de Express
+
+- npm install express --save
+
+### Créer un fichier index.js
+Rajoutez le code suivant à l'intérieur
+```
+
+```
+
+ ## 4 - Application de gestion des films
+
+![alt text for screen readers](/images/movie.png)
